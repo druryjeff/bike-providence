@@ -1,0 +1,241 @@
+/* General Styles */
+
+body {
+	font-family: 'Source Code Pro', monospace;
+	color: #212121;
+}
+
+a {
+	color: #8AC147;
+	text-decoration: none;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+li {
+	display: inline-block;
+}
+
+
+/* Header */
+
+header {
+	background-color: #374850;
+	padding: 2.5rem 1.5rem;
+	border-bottom: 1rem solid #607d8b;
+	text-align: center;
+}
+
+@media screen and (min-width: 40em){
+	header {
+		display:  flex;
+		justify-content: space-between;
+		text-align: left;
+	}
+}
+
+header a {
+	color: #ffffff;
+	padding: 0;
+}
+
+header a:hover {
+	color: #8AC147;
+}
+
+header a.curr {
+	border-bottom: 2px solid #fff;
+	padding-bottom: .25rem;
+}
+
+header a.curr:hover {
+	color: #fff;
+}
+
+header .logo {
+	margin-bottom: 1.5rem;
+	height:  3rem;
+	display: block;
+	margin: auto;
+}
+
+header nav {
+	margin-top: 1.5rem;
+}
+
+
+/* Hero Section */
+
+.hero {
+	position: relative;
+	background: url(../img/hero.jpg) no-repeat 50% 50%;
+	background-size: cover;
+	height: 60vh;
+}
+
+.hero-text {
+	position: absolute;
+	bottom: 2.25rem;
+	right: 1.5rem;
+	text-align: right;
+}
+
+.hero-text h1 {
+	color: #fff;
+}
+
+.hero-text a {
+	background-color: #8AC147;
+	color:  #212121;
+	padding: .5rem 1rem;
+	display:  inline-block;
+	border-radius: .25rem;
+}
+
+
+/* Main Content */
+
+@media screen and (min-width: 40em){
+	main.columns {
+		display:  flex;
+		gap:  2rem;
+		max-width: 67.5em;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	main.columns .main-content {
+		width:  65%;
+	}
+	main.columns .side-content {
+		width:  35%;
+		background-color:  transparent;
+	}
+}
+
+.main-content {
+	padding: 1.5rem 1.5rem 3rem 1.5rem;
+}
+
+.main-content img,
+.side-content img {
+	width: 100%;
+}
+
+.side-content {
+	padding: .5rem 1.5rem 3rem 1.5rem;
+	background-color: #f7f7f7;
+}
+
+.service {
+	margin-bottom: 2rem;
+}
+
+.service a {
+	color: #212121;
+}
+
+.side-content dd {
+	margin-left: 0;
+	margin-bottom: .5rem ;
+}
+
+.side-content address {
+	font-style: normal;
+}
+
+
+/* Logistics */
+
+.logistics img {
+	width: 100%;
+}
+
+.logistics {
+	padding: .5rem 1.5rem 3rem 1.5rem;
+	background-color: #f7f7f7;
+}
+
+.logistics dd {
+	margin-left: 0;
+	margin-bottom: .5rem ;
+}
+
+.logistics address {
+	font-style: normal;
+}
+
+@media screen and (min-width: 40em){
+	.logistics .columns {
+		display:  flex;
+		gap:  2rem;
+	}
+	.logistics .columns .column {
+		width:  50%;
+	}
+}
+
+
+/* Services Page */
+
+.services {
+	padding: 1.5rem 1.5rem 3rem 1.5rem;
+}
+
+.services img {
+	width: 100%;
+}
+
+.services h2 {
+	margin-bottom: .5rem;
+}
+
+.services p {
+	margin-top: 0;
+}
+
+@media screen and (min-width: 40em){
+	.services .columns {
+		display:  flex;
+		gap:  2rem;
+	}
+	.services .columns .service {
+		width:  33.3333%;
+	}
+}
+
+
+
+/* Footer */
+
+footer {
+	background-color: #212121;
+	padding: 2.5rem 1.5rem;
+	color: #ffffff;
+}
+
+@media screen and (min-width: 40em){
+	footer .columns {
+		display:  flex;
+		gap:  2rem;
+	}
+	footer .column {
+		width:  50%;
+	}
+}
+
+footer p {
+	margin-top: 0;
+}
+
+footer ul {
+	text-align: right;
+}
+
+.fa-brands {
+	font-size: 1.5rem;
+}
+
